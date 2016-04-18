@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.client.DemoApplication;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.ExtractableResponse;
 import com.jayway.restassured.response.Response;
@@ -10,11 +11,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
 
 import static com.jayway.restassured.RestAssured.given;
 import static junit.framework.TestCase.assertEquals;
-import static org.hamcrest.Matchers.equalTo;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = DemoApplication.class)
